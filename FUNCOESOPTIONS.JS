@@ -30,7 +30,7 @@ function clicou (){
     char = new Guerreiro(document.querySelector('#input').value);
     stage.fighter1 = char;
      stage.update();
-     audioPlayer.src = "Mago.mp3"
+     audioPlayer.src = "mago.mp3"
      audioPlayer.play();
   input.style.display = "flex"
   testechar = true;
