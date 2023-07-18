@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap');
+
+
+body{
+  background-image: url(fundo4.jpg);
+  font-family: 'Stick No Bills'
+
+  
+}
+
+.figtharea {
+    display: flex;
+    gap: 20px;
+    height: 400px;
+    width: 800px;
+    overflow: hidden;
+    border: solid 3px;
+    border-radius: 3%;
+    background-size: cover;
+    background-image: url(fundo3.jpg);  
+
+  }
+  
+  #char, #monster {
+    flex: 1;
+  }
+  
+  .lifebar {
+    height: 10px;
+    border: 1px solid #bdb0b050;
+    border-radius: 5px;
+    background-color: white;
+    display: none;
+    margin-left: 5px;
+    
+
+  }
+  
+  .lifebar .bar {
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+  }
+  #monster .lifebar {
+    width: 100px;
+  }
+  
+  .log{
+    border: 3px dashed rgb(114, 155, 182);
+    height: 100px;
+    width: 400px;
+    overflow-y: scroll;
+    background: rgb(190, 197, 204);
+
+    
+  }
+
+  .areattitulo{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+  }
+  .titulo{
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: rgb(229, 255, 0);
+    text-shadow: 3px 3px #1b0a03;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nome{
+    text-align: center;
+    display:none ;
+    color: white;
+  }
+
+  .cenario{display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(fundo.jpg);
+    background-size: cover;
+    background-position: center center;
+   }
+
+   .quadro{
+    display: flex;
+    width: 250px;
+    height: 300px;
+    margin-left: 100px;
+    align-items:flex-end;
+    justify-content:center;
+    background-image: url(fun.jpg);
+    background-size: cover;
+    background-position: center center;
+   }
+
+   .quadroM{
+    display: flex;
+    width: 250px;
+    height: 300px;
+    margin-left: 10px;
+    align-items:flex-end;
+    justify-content:center;
+    background-image: url(fun.jpg);
+    background-size: cover;
+    background-position: center center;
+   }
+
+   button.Atack {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  button.Atack:hover {
+    background-color: darkred;
+    transform: rotateX(10deg) rotateY(10deg);
+
+  }
+  button.Atack:active {
+    background-color: crimson;
+    transform: translateZ(-10px);
+
+  }  
+
+.opcoes {
+    display:flex;
+    justify-content:center;
+    width: 200px;
+    transform-style: preserve-3d;}
+
+.opcao1:hover{
+  background-color: darkred;
+  transform: rotateX(10deg) rotateY(10deg);
+  margin:3px
+}
+.opcao2:hover{
+  background-color: darkred;
+  transform: rotateX(10deg) rotateY(10deg);
+  margin:3px
+}.opcao3:hover{
+  background-color: darkred;
+  transform: rotateX(10deg) rotateY(10deg);
+  margin:3px
+}
+
+.opcao4:hover {
+      background-color: darkred;
+      transform: rotateX(10deg) rotateY(10deg);
+      margin:3px}
+  
+      
+.opcao1:active{
+  background-color: crimson;
+  transform: translateZ(-10px);
+}
+.opcao2{
+  background-color: crimson;
+  transform: translateZ(-10px);
+}
+.opcao3{
+  background-color: crimson;
+  transform: translateZ(-10px);
+}
+.opcao4:active {
+        background-color: crimson;
+        transform: translateZ(-10px);}
+   .escolha{
+    margin-left: 110px;
+    color: white;
+   }
+
+   input{
+    margin-bottom: 10px;
+    display: none;
+   }
+
+   .escolhaM{
+    margin-left: 20px;
+    color: white;
+
+   }
+   .opcoes button {
+    flex-grow: 1;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: red;
+    border: solid rgb(12, 12, 11);
+    height: 50px;
+
+  }
+
+  li{
+    text-decoration: none;
+  }
+
+  .iniciar{
+    margin-top: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    color: #E9D2B8;
+    background-color: rgb(4, 0, 255);
+    border: 1px solid #451B0B;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .iniciar:hover{
+    background-color: rgb(255, 0, 0);
+
+  }
+
+  .reiniciar{
+    margin-top: 10px;
+    margin-left: 3px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    color: #E9D2B8;
+    background-color: rgb(4, 0, 255);
+    border: 1px solid #451B0B;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .reiniciar:hover{
+    background-color: rgb(255, 0, 0);
+
+  }
+
+  .imagem{
+    display: none;
+    height: 250px;
+    width: 800px;
+  }
+
+h1{
+  color: yellow;
+  margin-top: 120px;
+  margin-right: 10px;
+}
+
+.reducao{
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a largura */
+    width: 100px;
+
+}

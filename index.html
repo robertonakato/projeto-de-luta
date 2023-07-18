@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino</title>
+    <link rel="stylesheet" href="index.css"/>
+    
+</head>
+<body>
+    <audio id="audioPlayer" src="mago.mp3" preload="auto" ></audio>
+
+<div class="cenario">
+<div class="areattitulo">
+    <strong class="titulo">Eclipse Arena</strong>
+</div>
+<input id="input" type="text" placeholder="Escreva seu nome de herói" onkeyup="Apertou()">
+<div class="figtharea", classe ="apagar">    
+    <div class="painel">
+    <img class="imagem" src="venceu.png" alt="">
+</div>
+    <div id="char">
+        <div class="nome">        <strong class="name">---</strong>
+        </div>
+        <div class="lifebar">
+            <div class="bar">      
+            </div>
+        </div>
+        <strong class="escolha" >ESCOLHA SUA CLASSE</strong>
+            <div class="quadro">
+                <div>
+                    <button class="Atack">Atacar</button>
+                    <div class="opcoes">
+                        <button class="opcao1" onclick="clicou()">Guerreiro</button>
+                            <button class="opcao2" onclick="clicou2()">Mago</button>
+                        </div>
+                </div>
+            </div>
+    </div>
+    <h1>VS</h1>
+    <div id="monster">
+        <div class="nome">        <strong class="name">---</strong>
+        </div>
+        <div class="lifebar" class="redução">
+            <div class="bar"></div>
+        </div>
+        <strong class="escolhaM" >ESCOLHA SEU OPONENTE</strong>
+        <div class="quadroM">
+            <div>
+                <button class="Atack">Atacar</button>
+                <div class="opcoes">
+                    <button class="opcao3" onclick="clicou3()">Dragão</button>
+                        <button class="opcao4" onclick="clicou4()">Anjo</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="inicio">
+    <a class="iniciar" onclick="iniciar()">INICIAR</a>
+</div>
+<button class="reiniciar" onclick="reiniciar()">    RENICIAR</button>
+
+    <ul class="log">
+
+    </ul>
+
+</div>
+    <script src="classes.js"></script>
+    <script src="index.js"></script>
+    <script src="FUNCOESOPTIONS.JS"></script>
+
+</body>
+</html>
