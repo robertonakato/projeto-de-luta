@@ -143,6 +143,8 @@ if (this.fighter2.life === 0) {
     let reiniciar = document.querySelector(".reiniciar");
     reiniciar.style.display = `flex`;
     let arena = document.querySelector(`.imagem`)
+    let arena = document.querySelector(".imagem");
+    arena.src = "venceu.png"
     arena.style.display = "flex";}
 
 if (this.fighter1.life === 0) {
