@@ -11,7 +11,7 @@ body{
 .figtharea {
     display: flex;
     gap: 20px;
-    height: 400px;
+    height: 280px;
     width: 800px;
     overflow: hidden;
     border: solid 3px;
@@ -88,8 +88,8 @@ body{
 
    .quadro{
     display: flex;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-left: 100px;
     align-items:flex-end;
     justify-content:center;
@@ -100,8 +100,8 @@ body{
 
    .quadroM{
     display: flex;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-left: 10px;
     align-items:flex-end;
     justify-content:center;
