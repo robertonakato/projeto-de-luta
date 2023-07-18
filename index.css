@@ -187,6 +187,7 @@ body{
    input{
     margin-bottom: 10px;
     display: none;
+     background:white;
    }
 
    .escolhaM{
